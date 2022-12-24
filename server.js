@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 
 const app = require("./app");
+const { DB_HOST } = require("./config");
 
 const { PORT = 3000 } = process.env;
-const DB_HOST =
-  "mongodb+srv://valentina:5aMX7R4KOAEC7U4A@cluster0.gpimnpq.mongodb.net/db-contacts?retryWrites=true&w=majority";
 
 mongoose
   .connect(DB_HOST)
